@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet7.css"/>
+<title> Contact Page </title>
+<link rel="icon" type="image/png" sizes="16x16" href="blak.jpg">
+
+<style>
+body {background-color:silver;}
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="leftcol">
+<form align="center" action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+<nav> 
+<ul> 
+<li> <a href="index.html"><img src="home.png" alt="Home" width="40" height="40"><br> Home</a> </li>
+<li> <a href="page1.html"><img src="list.png" alt="Home" width="40" height="40"><br>List of facts</a> </li>
+<li> <a href="page2.html"><img src="table.png" alt="Home" width="40" height="40"><br>Table</a> </li>
+<li> <a href="page3.html"><img src="gallery.png" alt="Home" width="40" height="40"><br>Gallery</a> </li>
+<li> <a href="page7.html"><img src="contact.png" alt="Home" width="40" height="40"><br>Contact</a> </li>
+<li> <a href="page8.html"><img src="media.png" alt="Home" width="40" height="40"><br>Media</a> </li>
+<li> <a href="page9.html"><img src="resume.png" alt="Home" width="40" height="40"><br>Resume</a> </li>
+
+</nav>
+<br><br><br>
+
+<div class="rightcol" >
+<main>
+<h2 align="center">Have Any Questions?:</h2> 
+
+
+<form action="action_page.php">
+<align><center>
+    <label for="fname">Full Name :</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+	<br>
+	<br>
+    <label for="lname">Email:</label>
+    <input type="text" id="lname" name="lastname" placeholder="Example@example.com..">
+	<br>
+	<br>
+	 <label for="lname">Phone Number:</label>
+    <input type="text" id="lname" name="Phone Number" placeholder="Phone Number..">
+	<br>
+	<br>
+    <label for="country">Country:</label>
+    <select id="country" name="country">
+      <option value="canada">USA</option>
+      <option value="usa">Canada</option>
+	
+    </select>
+	<br>
+	<br>
+
+    <label for="subject:">Subject:</label>
+	<br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+	<br>
+	<br>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div> 
+  
+
+  </div>
+<footer>
+<h3 align="center"> @copyright prav r</h3/>
+</footer>
+</div>
+<main>
+</body>
+</html>

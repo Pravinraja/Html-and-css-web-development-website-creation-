@@ -1,0 +1,193 @@
+<!doctype>
+<html>
+<head>
+<meta charset="uft-8">
+<link rel="stylesheet" href="stylesheet8.css"/>
+<title> Three Columns Media Setup </title><link rel="icon" type="image/png" sizes="16x16" href="blak.jpg">
+<style>
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+#gallary { position: relative;}
+#gallary ul { width: 200px;
+              list-style-type: none;}
+#gallary li { display: inline-block;
+              padding: 10px;}
+#gallary img{ border-style: none;}
+#gallary a { text-decoration:none;
+             color: #333;
+			 font-style: italic;}
+#gallary span {display:none;}
+#gallary a:hover span { display:block;
+						position:absolute;
+						top: 10px;
+						left:220px;
+						text-align: center;
+						opacity: 1;
+}
+</style>
+<head>
+<body>
+<header>
+<h1 align="center"> Media Page Of Cool/Random Stuff</h1> <div class="search-container">
+    <form align="center" action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
+<nav> 
+<ul> 
+<li> <a href="index.html"><img src="home.png" alt="Home" width="40" height="40"><br> Home</a> </li>
+<li> <a href="page1.html"><img src="list.png" alt="Home" width="40" height="40"><br> List</a> </li>
+<li> <a href="page2.html"><img src="table.png" alt="Home" width="40" height="40"><br> Table</a> </li>
+<li> <a href="page3.html"><img src="gallery.png" alt="Home" width="40" height="40"><br> Gallery</a> </li>
+<li> <a href="page7.html"><img src="contact.png" alt="Home" width="40" height="40"><br> Contact</a> </li>
+<li> <a href="page8.html"><img src="media.png" alt="Home" width="40" height="40"><br> Media</a> </li>
+<li> <a href="page9.html"><img src="resume.png" alt="Home" width="40" height="40"><br>Resume</a> </li>
+</nav>
+
+<br><br><br><br><br>
+<div class="row">
+  <div class="column" style="background-color:blue;">
+    
+    <div style="text-align:center"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="Jason.mp4" type="video/mp4">
+    <source src="Jason.ogg" type="video/ogg">
+  </video>
+</div> 
+
+<script> 
+var myVideo = document.getElementById("video1"); 
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+
+function makeBig() { 
+    myVideo.width = 560; 
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
+</body> 
+</html>
+
+ <h3> 1974 Pontiac Sunbird Test Run</h3>
+  <p style="border:ridge"> This a pretty cool and random video I took back in the days of working in a car shop. This was an antique vehicle owned by a special person. There 
+  are some pretty deep mods on this car. Finally, it is very loud as you can see. I hope you enjoyed the video. This was also recorded off an old Iphone 5 in 2017 </p>
+<figure>
+<img src="bej.jpg" alt="back" width="200" height="150">
+<figcaption> &nbsp&nbsp&nbsp&nbsp&nbspcoolcar.</figcaption>
+</figure>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+   
+
+<div id=gallary>
+<ul>
+<li>    
+<a href="f5.jpg"><img src="f5.jpg" width="50" height="50" alt="1">
+<span><img src="f5.jpg" width="200" height="200" alt="2" <br><br> Henessey Venom F5 Supercar</span></a>
+</li>
+
+
+
+<li>
+<a href="f40.jpg"><img src="f40.jpg" width="50" height="50" alt="2">
+<span><img src="f40.jpg" width="200" height="200" alt="2"<br><br> Ferrari F40 Supercar</span></a>
+</li>
+
+<li>
+<a href="r8.jpg"><img src="r8.jpg" width="50" height="50" alt="3">
+<span><img src="r8.jpg" width="200" height="200" alt="3"<br><br> Audi R8 Supercar</span></a>
+</li>
+
+
+
+<li>
+<a href="stinger.jpg"><img src="stinger.jpg" width="50" height="50" alt="4">
+<span><img src="stinger.jpg" width="200" height="200" alt="4"<br><br> Kia Stinger</span></a>
+
+<li>
+<a href="wrx.jpg"><img src="wrx.jpg" width="50" height="50" alt="5">
+<span><img src="wrx.jpg" width="200" height="200" alt="4"<br><br> Subaru WRX</span></a>
+</li>
+<li>
+<a href="g.jpg"><img src="g.jpg" width="50" height="50" alt="6">
+<span><img src="g.jpg" width="200" height="200" alt="6"<br><br> Lambo 2006</span></a>
+</li>
+
+<li>
+<a href="ven.jpg"><img src="ven.jpg" width="50" height="50" alt="7">
+<span><img src="ven.jpg" width="200" height="200" alt="7"<br><br> Lambo Veneno</span></a>
+</li>
+</li>
+</li>
+</li>
+</ul>
+</div>
+<br><br><br><br>
+<audio controls>
+  <source src="RunThisTown.mp3" type="audio/mp3">
+</audio>
+
+  
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <form action="get" >
+<fieldset>
+<h3> Please select your favourite color Gradient TEST!!!!</h3>
+<form action="/action_page.php">
+  Select your favorite color:
+  <input type="color" name="favcolor" value="#ff0000">
+  <input type="submit">
+
+  </form>
+<br><br><br>
+
+ <h4>Social Media Intergration</h4>
+<a href="https://www.google.com/">
+  <img src="goggle.png" alt="" style="width:80px;height:80px;border:0">
+</a>
+<a href="https://www.instagram.com/?hl=en">
+  <img src="insta.png" alt="" style="width:80px;height:80px;border:0">
+</a>
+<a href="https://www.facebook.com/">
+  <img src="facebook.png" alt="" style="width:80px;height:80px;border:0">
+</a>
+<a href="https://www.youtube.com/">
+  <img src="you.jpg" alt="" style="width:80px;height:80px;border:0">
+</a>
+  </div>
+</div>
+
+<footer>
+<h3 align="center"> @copyright Prav r</h3/>
+</body>
